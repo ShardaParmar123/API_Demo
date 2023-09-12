@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="Google.Apis" Version="1.61.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.61.0" />
+    <PackageReference Include="Google.Apis.Core" Version="1.61.0" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.61.0.3120" />
+    <PackageReference Include="Google.Apis.Gmail.v1" Version="1.61.0.3105" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.32.1" />
+    <PackageReference Include="MimeKit" Version="4.1.0" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.32.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AutoMapper\Base\" />
+    <Folder Include="AutoMapper\Master\" />
+    <Folder Include="AutoMapper\Report\" />
+    <Folder Include="AutoMapper\Shared\" />
+    <Folder Include="AutoMapper\Trans\" />
+    <Folder Include="Controllers\Master\" />
+    <Folder Include="Controllers\Report\" />
+    <Folder Include="Controllers\Trans\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo.BLL\Demo.BLL.csproj" />
+    <ProjectReference Include="..\Demo.Contract\Demo.Contract.csproj" />
+    <ProjectReference Include="..\Demo.DAL\Demo.DAL.csproj" />
+    <ProjectReference Include="..\Demo.Infrastructure\Demo.Infrastructure.csproj" />
+    <ProjectReference Include="..\Demo.Types\Demo.Types.csproj" />
+  </ItemGroup>
+
+</Project>
